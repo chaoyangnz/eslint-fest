@@ -1,5 +1,5 @@
 {
-  "name": "eslint-fest",
+  "name": "eslint-plugin-smx",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "release": "npm login && npx bump --tag && npm publish"
   },
   "peerDependencies": {
-    "eslint": "^2.0.0 || ^3.0.0 || ^4.0.0"
+    "eslint": "^2.0.0 || ^3.0.0 || ^4.0.0 || ^8.0.0"
   },
   "repository": {
     "type": "git",

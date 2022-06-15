@@ -49,6 +49,20 @@ ruleTester.run("padding-block", rule, {
       
     }
     `,
+      `
+      const fn = () => { 
+      
+        try {
+        
+          const a = 1; 
+          const b = 2; 
+          
+        } catch (e) {
+          console.log(e)
+        }
+        
+      }
+      `
   ],
 
   invalid: [
@@ -76,6 +90,22 @@ ruleTester.run("padding-block", rule, {
       const b = 2; 
       }`,
       errors: [
+        { message: "A single empty line is needed at the end of the block", type: "BlockStatement" }
+      ],
+    },
+    {
+      code: `const fn = () => { 
+        try {
+        
+          const a = 1; 
+          const b = 2; 
+          
+        } catch (e) {
+          console.log(e)
+        }
+      }`,
+      errors: [
+        { message: "A single empty line is needed at the beginning of the block", type: "BlockStatement" },
         { message: "A single empty line is needed at the end of the block", type: "BlockStatement" }
       ],
     },
