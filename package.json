@@ -1,0 +1,36 @@
+{
+  "name": "eslint-fest",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/**/*.js",
+    "release": "npm login && npx bump --tag && npm publish"
+  },
+  "peerDependencies": {
+    "eslint": "^2.0.0 || ^3.0.0 || ^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaoyangnz/eslint-fest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaoyangnz/eslint-fest/issues"
+  },
+  "homepage": "https://github.com/chaoyangnz/eslint-fest#readme",
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "mocha": "^10.0.0",
+    "version-bump-prompt": "^6.1.0"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
