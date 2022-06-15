@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chaoyangnz/eslint-fest.git"
+    "url": "git+https://github.com/chaoyangnz/eslint-plugin-smx.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chaoyangnz/eslint-fest/issues"
+    "url": "https://github.com/chaoyangnz/eslint-plugin-smx/issues"
   },
-  "homepage": "https://github.com/chaoyangnz/eslint-fest#readme",
+  "homepage": "https://github.com/chaoyangnz/eslint-plugin-smx#readme",
   "devDependencies": {
     "eslint": "^8.17.0",
     "mocha": "^10.0.0",
