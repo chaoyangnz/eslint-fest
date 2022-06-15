@@ -1,4 +1,4 @@
-# eslint-fest
+# eslint-plugin-smx
 
 A set of extended eslint rules
 
