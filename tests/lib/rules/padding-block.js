@@ -76,7 +76,7 @@ ruleTester.run("padding-block", rule, {
     {
       code: `
 function fn() {
-  const a = 1; 
+  const a = 1; // something
   const b = 2; 
 
 }`,
@@ -86,7 +86,7 @@ function fn() {
       output: `
 function fn() {
 
-  const a = 1; 
+  const a = 1; // something
   const b = 2; 
 
 }`,
@@ -95,7 +95,7 @@ function fn() {
       code: `
 function fn() { 
       
-  const a = 1;
+  const a = 1; // something
   const b = 2;
 }`,
       errors: [
@@ -104,7 +104,7 @@ function fn() {
       output: `
 function fn() { 
       
-  const a = 1;
+  const a = 1; // something
   const b = 2;
 
 }`,
