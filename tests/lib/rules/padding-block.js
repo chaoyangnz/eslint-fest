@@ -139,5 +139,33 @@ const fn = () => {
 
 }`,
     },
+    {
+      code: `
+function fn() {
+    // const a = 1
+    
+    // const b = 1
+    const a = 1
+    
+    // bbb
+    const b = 2
+    
+}`,
+      errors: [
+        { message: "A single empty line is needed at the beginning of the block", type: "BlockStatement" },
+      ],
+      output: `
+function fn() {
+
+    // const a = 1
+    
+    // const b = 1
+    const a = 1
+    
+    // bbb
+    const b = 2
+    
+}`,
+    }
   ],
 });
